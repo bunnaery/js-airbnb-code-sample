@@ -46,7 +46,7 @@ const Opening = ({ route, navigation }) => {
   const whitePlayer = route.params.color === 'white' ? 'player' : 'engine'; 
   const blackPlayer = route.params.color === 'black' ? 'player' : 'engine';
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const onClose = () => setIsOpen(false);
   const [showModal, setShowModal] = useState(false);
 
