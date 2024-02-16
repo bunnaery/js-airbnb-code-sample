@@ -28,8 +28,9 @@ const Opening = ({ route, navigation }) => {
   const {height, width} = useWindowDimensions();
   const API = 'https://barbie-fischer-chess.onrender.com/games'
 
-  /* Keeping track of the fen is how we track changes in board 
-  representation and undo moves before sending them to the server */
+  /* Fen is a string notation that can be used to represent a chessboard
+  at any given time during a game, including who's turn is next. We pass
+  this back and forth to the server to play moves */
   const initialFen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
   const [currentFen, updateFen] = useState(initialFen); 
   const [oldFen, setOldFen] = useState();
@@ -49,8 +50,7 @@ const Opening = ({ route, navigation }) => {
   const onClose = () => setIsOpen(false);
   const [showModal, setShowModal] = useState(false);
 
-  /* The POST route creates a new game in the database. If the engine was
-  was chosen to be the white player, it sends back its first move. */
+
   useEffect(() => {
     axios.post(`${API}`, {"white": whitePlayer, "opening": opening,})
     .then((result) => {
@@ -64,17 +64,12 @@ const Opening = ({ route, navigation }) => {
     })
   }, []);
 
-  /* Chess openings have variations. This checks to see if our variation
-  has updated based on recent moves. */
   const checkVariation = (info) => {
     if (info !== variation) {
       setVariation(info);
     }
   };
 
-  /* Once a user confirms their move, a PATCH request is sent to the
-  server with the updated fen. It receives the engine's move as
-  response data and any changes in opening variation in response. */
   const confirmMove = () => {
     let newMoveList = moveList;
     newMoveList.push(currentMove);
@@ -93,12 +88,10 @@ const Opening = ({ route, navigation }) => {
       })
   };
 
-  // Allows user to revert a move before sending it to the server
   const undoMove = () => {
     updateFen(oldFen);
   };
   
-  // Deletes game from server and sends user back to the Home screen
   const deleteGame = () => {
     axios.delete(`${API}/${gameID}`)
     .then((result) => {
@@ -124,9 +117,6 @@ const Opening = ({ route, navigation }) => {
     )
   );
 
-  /* The button and modal between lines 136 - 159 share info with the player
-  about the opening and variation they're practicing. It updates automatically, 
-  pulling info from a json file of openings, their variations, and summaries. */
   return (
     <GestureHandlerRootView>
       <Center>
