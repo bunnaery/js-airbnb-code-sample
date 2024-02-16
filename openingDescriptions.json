@@ -1,0 +1,57 @@
+{
+    "Queen's Gambit": {
+        "Name": "Queen's Gambit",
+        "Summary": "The Queen's Gambit is one of the oldest openings and is still commonly played today. It is traditionally described as a gambit because White appears to sacrifice the c-pawn; however, this could be considered a misnomer as Black cannot retain the pawn without incurring a disadvantage.", 
+        "Variations": {
+            "Accepted": "The Queen's Gambit Accepted is the third most popular option on Black's second move, after 2...e6 (the Queen's Gambit Declined) and 2...c6 (the Slav Defense).",
+            "Declined": "The Queen's Gambit Declined (or QGD) is a chess opening in which Black declines a pawn offered by White in the Queen's Gambit."
+        }
+    },
+    "Fried Liver": {
+        "Name": "Fried Liver",
+        "Summary": "The Fried Liver Attack, also called the Fegatello Attack (named after an Italian dish), is a chess opening. This opening is a variation of the Two Knights Defense in which White sacrifices a knight for an attack on Black's king.", 
+        "Variations": {
+            "Main": "The classical response. Black defends the e5 pawn and develops a Knight. White has several options available; references below.",
+            "Polerio Defense": "The 'Polerio Defense' is the best defensive plan for Black against the Fried Liver Attack. Na5 is the defining move of the 'Polerio Defense' and it looks a little weird, doesn't it? 'Knights on the rim are grim', and all that. However, this is Blacks best chance at maintaining equality.",
+            "Traxler's CounterAttack": "Bc5 is the defining move of the 'Traxler Counter Gambit'. Ignoring the obvious threat on f7, Black boldly sets up a sacrifice of their own on f2."
+        }
+    },
+    "Ruy Lopez": {
+        "Name": "Ruy Lopez",
+        "Summary": "The Ruy Lopez, also called the Spanish Opening or Spanish Game, is named after 16th-century Spanish priest Ruy López de Segura. It is one of the most popular openings, with many variations.", 
+        "Variations": {
+            "Main": "The Main Line of the Ruy Lopez sees White positioning their pieces to prepare for a long struggle for central control. Black starts to fend off the white light-squared bishop with 3...a6. After White castles, the game can still take many different directions.",
+            "Marshall Attack": "The Marshall Attack was developed by the brilliant attacking player Frank Marshall and used for the first time against Jose Raul Capablanca in 1918. Black gambits a pawn to build a quick attack against the white king.",
+            "Closed": "In the Closed Variation, Black puts their dark-squared bishop on e7, usually inside the pawn chain. After Black's fifth move, play can continue in many different ways.",
+            "Archangel": "The Archangel Variation is a good way for tactical players to face the Ruy Lopez. This line usually leads to open games, where Black can try to use their bishop pair to create counterplay. In this line, White wins 39% of games, draws 30%, and Black wins 30%."
+            }
+    },
+    "Sicilian Defense": {
+        "Name": "Sicilian Defense",
+        "Summary": "Sicilian Opening is the most popular opening from Black. It has caused a fair share of troubles and victories in some of the most remarkable games in the world.The Sicilian Opening begins with white playing e4 followed by black playing c5. The basic idea of c5 is to gain control over the d4 square.", 
+        "Variations": {
+            "Open Sicilian": "75% of the games beginning with e4, c5 are followed with white playing Nf3, after which black has three main choices- d6, Nc6 and e6. If white responds with d4, then all the lines that continue after are known as ‘Open Sicilian’. Black then trades the c5 pawn and d4 pawn to get central advantage and gains an open ‘c’ file.",
+            "Closed Sicilian": "The Closed Sicilian arises after the moves 1. e4 c5 2. Nc3. In this variation, black has more space on the queenside, and white has more space on the kingside. Black will often seek to expand on the queenside or strike in the center before white’s attack crashes through.",
+            "Dragon Variation": "The Dragon variation gets its name from the black pawn structure – h7, g6, f7, e7, and d6. One of the advantages of this pawn structure is that it allows for rapid development compared to other variations of the Sicilian Defense.",
+            "Najdorf Variation": "Najdorf is the most intensely studied and respected of all modern chess openings. The main aim is to defend the b5 square, and Black aims to pose a Queenside minority attack to put pressure on White’s e4 pawn. Black’s eventual motive is to play ‘b5’ to promote a queenside development. Black also does not want any White pieces on the ‘b5’ square."
+            }
+    },
+    "French Defense": {
+        "Name": "French Defense",
+        "Summary": "The idea behind the French Defense is that Black plays e6 to prepare to advance the d5 pawn, in order to immediately challenge White's pawn on e4. It is a solid and sharp opening, and it has been played by some of the greatest chess players in the world.", 
+        "Variations": {
+            "Classical Variation": "The Classical Variation of the French Defense arises after the moves 1.e4 e6 2. d4 d5 3. Nc3 Nf6, The idea of this move order is quite logical – Black develops a piece and creates pressure against the pawn on e4, prompting White to do something with it.",
+            "Winawer Variation": "In the Winawer French, Black immediately pins the Nc3 with the dark-squared bishop, putting additional pressure on e4. This often results in the bishop being traded, creating an imbalance of White's doubled pawns versus the two bishops advantage.",
+            "Tarrasch Variation": "The Tarrasch is a variation of the Queen's Gambit Declined. Black's third move is an aggressive bid for central space. After White plays cxd5 and dxc5, Black will be left with an isolated pawn on d5. Such a pawn may be weak, since it can no longer be defended by other pawns, but it grants Black a foothold in the center, and Black's bishops will have unobstructed lines for development."
+            }
+    },
+    "King's Indian Defense": {
+        "Name": "King's Indian Defense",
+        "Summary": "In the King's Indian Defense, as in other hypermodern openings, the main idea for Black is to give up his central control and allow White to expand his control of the board while Black develops his minor pieces. He allows that only in order to counterstrike at White's gained space and weakened, overextended pawns.", 
+        "Variations": {
+            "Classical Variation": "As the name suggests, in the Classical Variation of the King's Indian Defense, white develops in classical fashion with Nf3 and Be2. The moves c4, d4, and e4 give white excellent control of the center, but the c4 and e4 advances mean white cannot defend d4 with a pawn",
+            "Fianchetto Variation": "The Fianchetto Variation method of development is on completely different lines than other King's Indian variations. Here, Black's normal plan of attack can hardly succeed, as White's kingside is more solidly defended than in most KID variations.",
+            "Sämisch Variation": "The Sämisch Variation is 3.Nc3 Bg7 4.e4 d6 5.f3. It is named after Friedrich Sämisch, who developed the system in the 1920s. This often leads to very sharp play with the players castling on opposite wings and attacking each other's kings, as in the Bagirov–Gufeld game given below, though it may also give rise to heavyweight positional struggles."
+        }
+    }
+}
