@@ -50,7 +50,9 @@ const Opening = ({ route, navigation }) => {
   const onClose = () => setIsOpen(false);
   const [showModal, setShowModal] = useState(false);
 
-
+  /* We create a new game by sending a POST request to our server (and database).
+  The chess engine stores the params, and if the engine is whitePlayer, it
+  sends back its first move immediately in the API response. */
   useEffect(() => {
     axios.post(`${API}`, {"white": whitePlayer, "opening": opening,})
     .then((result) => {
@@ -64,12 +66,16 @@ const Opening = ({ route, navigation }) => {
     })
   }, []);
 
+  /* This checks to see if our opening variation changed. If so, the information
+  at the top of the screen will pull updated text from the json file. */
   const checkVariation = (info) => {
     if (info !== variation) {
       setVariation(info);
     }
   };
 
+  /* The user must confirm their move before it sends a PATCH request. This is
+  so that they have a chance to undo their move if they've misclicked. */
   const confirmMove = () => {
     let newMoveList = moveList;
     newMoveList.push(currentMove);
@@ -101,7 +107,8 @@ const Opening = ({ route, navigation }) => {
     .catch((err) => {
       console.log(err); 
     })
-    navigation.navigate('Home');
+    // A user is navigated back to the home screen immediately upon deletion.
+    navigation.navigate('Home'); 
     
   }
 
