@@ -29,7 +29,7 @@ const Opening = ({ route, navigation }) => {
   const API = 'https://barbie-fischer-chess.onrender.com/games'
 
   /* Fen is a string notation that can be used to represent a chessboard
-  at any given time during a game, including who's turn is next. We pass
+  at any given time during a game, including whose turn is next. We pass
   this back and forth to the server to play moves */
   const initialFen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
   const [currentFen, updateFen] = useState(initialFen); 
