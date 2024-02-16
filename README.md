@@ -6,4 +6,4 @@ It was created using React Native on the frontend and Python (Flask) on the back
 While it was a group project, I have made sure this coding sample includes ONLY code written by me. I've also included some comments I hope will be helpful.
 
 ### Screenshots below:
-<img src="/assets/Screenshot 2024-02-16 at 5.03.23 AM.png" alt="home screen screenshot" height="500"> <img src="/assets/Screenshot 2024-02-16 at 5.04.50 AM.png" alt="opening game screenshot" height="500">  <img src="/assets/Screenshot 2024-02-16 at 5.05.29 AM.png" alt="info modal open screenshot" height="500">
+<img src="/assets/Screenshot 2024-02-16 at 5.04.50 AM.png" alt="opening game screenshot" height="500">  <img src="/assets/Screenshot 2024-02-16 at 5.05.29 AM.png" alt="info modal open screenshot" height="500">
